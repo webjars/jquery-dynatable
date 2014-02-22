@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-dynatable</artifactId>
-    <version>0.3.1-SNAPSHOT</version>
+    <version>0.3.1</version>
     <name>jQuery Dynatable</name>
     <description>WebJar for jQuery Dynatable</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/jquery-dynatable</url>
         <connection>scm:git:https://github.com/webjars/jquery-dynatable.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-dynatable.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jquery-dynatable-0.3.1</tag>
     </scm>
     
     <dependencies>
