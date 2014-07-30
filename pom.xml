@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-dynatable</artifactId>
-    <version>0.3.2-SNAPSHOT</version>
+    <version>0.3.1-1-SNAPSHOT</version>
     <name>jQuery Dynatable</name>
     <description>WebJar for jQuery Dynatable</description>
     <url>http://webjars.org</url>
@@ -52,6 +52,12 @@
         <upstream.version>0.3.1</upstream.version>
         <upstream.url>https://raw2.github.com/alfajango/jquery-dynatable/v${upstream.version}</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <requirejs>
+            {
+                "paths": { "jquery-dynatable": "jquery.dynatable" },
+                "shim": { "jquery-dynatable": [ "jquery" ] }
+            }
+        </requirejs>
     </properties>
 
     <build>
@@ -91,14 +97,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.4.2</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.scm</groupId>
-                        <artifactId>maven-scm-provider-gitexe</artifactId>
-                        <version>1.9</version>
-                    </dependency>
-                </dependencies>
+                <version>2.5</version>
             </plugin>
 
             <plugin>
